@@ -1,0 +1,490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"em",
+				"emailAddress"
+			],
+			[
+				"long",
+				"long_name"
+			],
+			[
+				"font",
+				"fontDir"
+			],
+			[
+				"Ma",
+				"MAGNUM"
+			],
+			[
+				"filter",
+				"filterGroups"
+			],
+			[
+				"selected",
+				"selectedItem"
+			],
+			[
+				"na",
+				"navLists"
+			],
+			[
+				"cameraSta",
+				"cameraStations"
+			],
+			[
+				"selec",
+				"selectedItem"
+			],
+			[
+				"asset",
+				"assetGroups"
+			],
+			[
+				"addPA",
+				"addParticleAt"
+			],
+			[
+				"scene",
+				"sceneHeight"
+			],
+			[
+				"lols",
+				"lolsBeingMixed"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"videos",
+				"videosBeingProcessed"
+			],
+			[
+				"for",
+				"foreach"
+			],
+			[
+				"not",
+				"notNull"
+			],
+			[
+				"p",
+				"price"
+			],
+			[
+				"frames",
+				"framesdir"
+			],
+			[
+				"mov",
+				"movie1"
+			],
+			[
+				"report_",
+				"report_extract_entry"
+			],
+			[
+				"report",
+				"report_title"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jeff/Sites/explosion/scripts/vidtools.py",
+		"/Users/jeff/Documents/video_grid/make_grid.py",
+		"/Users/jeff/Sites/laborers-of-love/bin/mix.py",
+		"/Users/jeff/Sites/laborers-of-love/bin/SourceVideo.py",
+		"/Users/jeff/Sites/laborers-of-love/models/Job.js",
+		"/Users/jeff/Desktop/uniqifiers_benchmark.py",
+		"/Users/jeff/Sites/explosion/scripts/video.py",
+		"/Users/jeff/Sites/explosion/scripts/hyperlapse.py",
+		"/Users/jeff/Sites/explosion/Procfile",
+		"/Users/jeff/Sites/explosion/package.json",
+		"/Users/jeff/Sites/explosion/app.js",
+		"/Users/jeff/Sites/explosion/.gitignore",
+		"/Users/jeff/Sites/explosion/views/index.ejs",
+		"/Users/jeff/Sites/TheExplosion/Procfile",
+		"/Users/jeff/Sites/TheExplosion/.gitignore",
+		"/Users/jeff/Sites/TheExplosion/package.json",
+		"/Users/jeff/Desktop/explosion/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_08/spacebrew-scrape2/spacebrew-casual.py",
+		"/Users/jeff/Desktop/explosion/scripts/video.py",
+		"/Users/jeff/Sites/laborers-of-love/models/LOL.js",
+		"/Users/jeff/Desktop/explosion/views/index.ejs",
+		"/Users/jeff/Sites/laborers-of-love/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_10/sb-tweeter/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_08/node-spacebrew/app.js",
+		"/Users/jeff/Desktop/missed/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_09/itunes-control/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_08/spacebrew-twitter/app.js",
+		"/Users/jeff/Desktop/desktop/missed/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_10/viner/app.js",
+		"/Users/jeff/Documents/SpatialMedia/Week_10/sb-example/app.js",
+		"/Users/jeff/.ssh/known_hosts",
+		"/Users/jeff/Desktop/OpenNI-2.1.0/install.sh",
+		"/Users/jeff/Desktop/OpenNI-2.1.0/OpenNIDevEnvironment",
+		"/Users/jeff/Desktop/OpenNI-2.1.0/Documentation/html/_getting_started_8txt.html",
+		"/Users/jeff/Documents/of_v0.7.4_osx_release/apps/OpenNI/opeNI-SimpleExamples/bin/data/openni/config/ofxopenni_config.xml",
+		"/Users/jeff/Documents/of_v0.7.4_osx_release/apps/OpenNI/opeNI-SimpleExamples/bin/data/openni/config/Asus.xml",
+		"/Users/jeff/Desktop/xtion1208080248.licence",
+		"/Users/jeff/Documents/of_v0.7.4_osx_release/apps/OpenNI/01_SimpleInputs/bin/data/openni/config/ofxopenni_config.xml",
+		"/Users/jeff/Documents/of_v0.7.4_osx_release/apps/OpenNI/opeNI-SimpleExamples/bin/data/openni/config/asus.xml",
+		"/Users/jeff/Sites/you3b/bin/crossfade.py",
+		"/Users/jeff/Desktop/concat.sh",
+		"/Users/jeff/Sites/portfolio/Rakefile",
+		"/Users/jeff/Sites/portfolio/_posts/2013-04-11-CCMC-aquarium.html",
+		"/Users/jeff/Sites/portfolio/blog.html",
+		"/Users/jeff/Sites/portfolio/_posts/2013-04-11-the-junkyard.html",
+		"/Users/jeff/Sites/portfolio/_posts/2012-05-10-magnum_map.html",
+		"/Users/jeff/Sites/portfolio/_posts/2013-04-11-raspberry-pi-nas.md",
+		"/Users/jeff/Sites/laborers-of-love/lol.sublime-project",
+		"/Users/jeff/Sites/portfolio/_posts/2013-01-06-transmediale-panel.md",
+		"/Users/jeff/Sites/portfolio/teaching/humor-and-code/index.html",
+		"/Users/jeff/Sites/portfolio/_posts/2013-02-01-laborers_of_love.html",
+		"/Users/jeff/Sites/portfolio/_posts/2013-02-05-humor-code-blog.md",
+		"/Users/jeff/dist/rtmpdump/Makefile",
+		"/Users/jeff/dist/rtmpdump/README",
+		"/Users/jeff/Sites/portfolio/teaching/index.html",
+		"/Users/jeff/Sites/portfolio/teaching/intermediate-of/index.md",
+		"/Users/jeff/Sites/portfolio/teaching/code-for-art/index.html",
+		"/Users/jeff/Sites/portfolio/_posts/2012-11-20-code-help-policy.html",
+		"/Users/jeff/Sites/portfolio/_posts/2013-01-06-imagination_playground.md",
+		"/Users/jeff/Sites/portfolio/_posts/2012-04-10-loops-and-arrays.md",
+		"/Users/jeff/Sites/portfolio/_posts/2012-10-20-intermediate-of-images.md",
+		"/Users/jeff/Sites/laborers-of-love/node_modules/less-middleware/lib/middleware.js",
+		"/Users/jeff/Sites/laborers-of-love/node_modules/express-validator/lib/express_validator.js",
+		"/Users/jeff/Sites/laborers-of-love/node_modules/string/lib/string.js",
+		"/Users/jeff/Sites/laborers-of-love/node_modules/mturk/lib/signature.js",
+		"/Users/jeff/Sites/laborers-of-love/package.json",
+		"/Users/jeff/Sites/laborers-of-love/views/question.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/boilerplate.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/create.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/status.ejs",
+		"/Users/jeff/Sites/laborers-of-love/README.md",
+		"/Users/jeff/Desktop/My Library.bib",
+		"/Users/jeff/Desktop/mosh.rb",
+		"/usr/bin/datamosh",
+		"/Users/jeff/Sites/laborers-of-love/bin/mosh.rb",
+		"/Users/jeff/Sites/laborers-of-love/bin/mosh.py",
+		"/Users/jeff/Documents/pymosh/examples/mosh.py",
+		"/Users/jeff/Documents/pymosh/examples/moshmotion.py",
+		"/Users/jeff/Sites/laborers-of-love/views/about.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/gallery.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/index.ejs",
+		"/Users/jeff/Documents/pymosh/INSTALL",
+		"/Users/jeff/Sites/laborers-of-love/public/css/bootstrap-responsive.css",
+		"/Users/jeff/Sites/laborers-of-love/views/hits.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/progress.ejs",
+		"/Users/jeff/Sites/laborers-of-love/views/readyToDownload.ejs",
+		"/Users/jeff/Documents/youtube-dl/youtube_dl/InfoExtractors.py",
+		"/Users/jeff/Documents/youtube-dl/youtube_dl/__init__.py",
+		"/Users/jeff/Sites/laborers-of-love/public/css/bootstrap.min.css",
+		"/Users/jeff/Sites/laborers-of-love/public/css/bootstrap.css",
+		"/Users/jeff/Desktop/seanpowell-Email-Boilerplate-f11a6e0/email_lite.html",
+		"/Users/jeff/Sites/laborers-of-love/videos/50cd1c7be96841a71c000001/50cd1cc8e96841a71c000002.mp4.info.json",
+		"/Users/jeff/Sites/laborers-of-love/videos/50cd1c7be96841a71c000001/50cd1cc8e96841a71c000004.flv.info.json",
+		"/Users/jeff/Sites/laborers-of-love/videos/50cd1c7be96841a71c000001/50cd1cc8e96841a71c000003.flv.info.json",
+		"/Users/jeff/Sites/laborers-of-love/bin/mixmaker.py",
+		"/Users/jeff/Sites/laborers-of-love/videos/50ccdf3867bc4f1e16000001/50ccdf5c67bc4f1e16000003.flv.info.json",
+		"/Users/jeff/Sites/laborers-of-love/videos/50ccdf3867bc4f1e16000001/50ccdf5c67bc4f1e16000004.mp4.info.json",
+		"/Users/jeff/Documents/youtube-dl/Makefile",
+		"/Users/jeff/Sites/laborers-of-love/public/css/style.css",
+		"/Users/jeff/Desktop/initializr/index.html",
+		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/VertTriList.cs",
+		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/NearestPointTest.cs",
+		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/KDTree.cs",
+		"/Users/jeff/Sites/laborers-of-love/bin/crossfade.py",
+		"/usr/local/share/echo-nest-remix-examples/summary/summary.py",
+		"/Users/jeff/Desktop/pango.txt",
+		"/Users/jeff/Sites/laborers-of-love/bin/testvid.py",
+		"/Users/jeff/Sites/laborers-of-love/bin/file.melt",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/activity.conf",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/WallController.py",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/manager.py",
+		"/Users/jeff/Documents/of_0071_iOS_release/apps/iPadCasualEncountersGame/.gitignore",
+		"/Users/jeff/Documents/of_0071_iOS_release/apps/iPadCasualEncountersGame/README.md",
+		"/Users/jeff/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jeff/Library/Application Support/Sublime Text 2/Packages/User/InteractiveSpaces.sublime-build",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.api/src/main/java/com/rockwell/ci/api/CIAPIService.java",
+		"/Users/jeff/Desktop/CityScapeController/src/testApp.h",
+		"/Users/jeff/Desktop/CityScapeController/src/testApp.mm",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/activity.xml",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/webapp/cgi-bin/hello.py",
+		"/Users/jeff/Documents/Google-MtV/com.rockwell.androidforwarder/src/main/resources/activity/AndroidForwarder.py",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/webapp.py",
+		"/Users/jeff/Documents/Google-Paris/utils/site/rockwell/lab/presets/BaseAdminServerActivity.py",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.exhibit/com.rockwell.ci.exhibit.display/src/main/resources/activity/activity.conf",
+		"/Users/jeff/Documents/Google-Paris/utils/site/rockwell/lab/presets/BaseDisplayActivity.py",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/webapp.py",
+		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/activity.conf",
+		"/Users/jeff/Desktop/webapp.py"
+	],
+	"find":
+	{
+		"height": 81.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Destination",
+			"loglevel",
+			"soname",
+			"-soname",
+			"request",
+			"util.format",
+			"timestamp",
+			"format",
+			"lols.save",
+			"714",
+			"format",
+			"/gallery",
+			"large",
+			"span12",
+			"layout",
+			"span12",
+			"randrange",
+			"new_video",
+			"!os.path.exists(new_video)",
+			"!os.path.exists(new_video) ",
+			"ERROR!::::::::",
+			"xnxx.com",
+			"video.xnxx.com",
+			"xvideos",
+			"hero-unit",
+			"console",
+			"nProcessed",
+			"file_to_delete",
+			"out.avi",
+			" )",
+			"annotation_histogram",
+			"self.spaceEnvironment.executorService.scheduleWithFixedDelay",
+			"1",
+			"isConnection",
+			"api",
+			"mouseMoved",
+			"position",
+			"cosole",
+			"ExhibitImageMaterial",
+			"textCount",
+			"image_url",
+			")]}'",
+			"vertex",
+			"scene",
+			"lol.status",
+			"Removing",
+			"assignmentsBeingReviewed",
+			"splice",
+			"delete",
+			".push",
+			"parseFloat",
+			"parseInt",
+			"tr",
+			"HOSTNAME",
+			"/question",
+			"req.connection.remoteAddress",
+			"foreach",
+			"random",
+			"ngrid",
+			"int",
+			"ec",
+			"question",
+			"__dirname",
+			"questionFormXML",
+			"poller",
+			"conf",
+			"asssert",
+			"/question",
+			"hit",
+			"hitsourcesource",
+			"hit",
+			"localhost:3000",
+			"http",
+			"http:",
+			"localhost:3000",
+			" * ",
+			" *  ",
+			"sox",
+			"getLength",
+			"getLegth",
+			"strip",
+			"html",
+			"strip",
+			"list-formats",
+			"%",
+			"split",
+			"'format'",
+			"unescape",
+			"parse",
+			"findall",
+			"self._downloader.params.get('format'",
+			"format",
+			"glitch",
+			"webkit-border-radius",
+			"open"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true
+}
