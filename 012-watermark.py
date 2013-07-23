@@ -2,7 +2,7 @@
 """
 Introduces ffmpeg overlays
 
-eg: ./ssve012.py --video data/big.mp4 --watermark data/watermark.png watermarked.avi
+eg: ./012-watermark.py --video data/big.mp4 --watermark data/watermark.png watermarked.avi
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess

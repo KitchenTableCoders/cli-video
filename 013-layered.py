@@ -2,7 +2,7 @@
 """
 Introduces ffmpeg overlays
 
-eg: ./ssve013.py data/cows-big.flv data/nintendo-big.mp4 data/nintendo-small.mp4 --output layered.avi
+eg: ./013-layered.py data/cows-big.flv data/nintendo-big.mp4 data/nintendo-small.mp4 --output layered.avi
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess
