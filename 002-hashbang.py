@@ -3,7 +3,7 @@
 Demonstrates the used of the hashbang line (above: #!/usr/bin/env python), which makes 
 it possible to run the file as a script invoking the interpreter implicitly
 
-python 002-hashbang.py Jeff Mauve
+eg: ./002-hashbang.py Jeff Mauve
 """
 
 import sys
