@@ -28,7 +28,7 @@ Filters:
    silently ignore properties that do not apply.
 
 
-eg: ./018-filters.py --output filters.mp4 data/giant.mp4 data/cows-big.flv 
+eg: ./018-filters.py data/giant.mp4 data/cows-big.flv 
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess
@@ -44,7 +44,7 @@ def frange(x, y, jump):
 def main():
 
 	parser = argparse.ArgumentParser(description='Mush together some videos')
-	parser.add_argument('--output', type=str, help='output name', default="out.mp4")
+	parser.add_argument('--output', type=str, help='output name')
 	parser.add_argument('videos', type=str, nargs=2, help='some videos')
 	args = parser.parse_args()
 
@@ -62,7 +62,8 @@ def main():
 		cmd += "-filter frei0r.pixeliz0r 0={0} 1={0} in={1} out={2} ".format(_size, _in, _in+20)
 		_in += 5
 	
-	cmd += "-consumer avformat:{0} vcodec=libxvid acodec=aac ab=448000 vb=5000k r=30 s=640x480".format(args.output)
+	if args.output != None:
+		cmd += "-consumer avformat:{0} vcodec=libxvid acodec=aac ab=448000 vb=5000k r=30 s=640x480".format(args.output)
 	print cmd
 	subprocess.call(cmd, shell=True)
 

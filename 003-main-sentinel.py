@@ -7,9 +7,9 @@ eg: ./003-main-sentinel.py Jeff mauve
 """
 import sys
 
-
 def main():
 	print sys.argv[1] + "'s favorite color is " + sys.argv[2];
+
 
 if __name__ == '__main__':
 	main()

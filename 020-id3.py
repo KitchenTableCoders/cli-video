@@ -2,7 +2,6 @@
 """
 Demonstrates fetching id3 information for a song
 
-
 Note: sudo pip install mutagen
 
 eg: ./020-id3.py "data/06 Cliantro Vision.mp3"

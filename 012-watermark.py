@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
 Introduces ffmpeg overlays
+http://trac.ffmpeg.org/wiki/FilteringGuide
 
 eg: ./012-watermark.py --video data/big.mp4 --watermark data/watermark.png watermarked.avi
 """
@@ -18,7 +19,7 @@ def main():
 
 	#	http://www.ffmpeg.org/ffmpeg-filters.html#overlay-1
 	#	main_w, overlay_w, main_h, overlay_h
-	cmd = 'ffmpeg -i {0} -i {1} -filter_complex "[0:v][1:v]overlay=10:10" {2}'.format(args.video, args.watermark, args.output[0])
+	cmd = 'ffmpeg -i {0} -i {1} -filter_complex "[0:v][1:v]overlay=main_w-overlay_w:main_h-overlay_h" {2}'.format(args.video, args.watermark, args.output[0])
 	subprocess.call(cmd, shell=True)
 
 

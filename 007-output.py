@@ -4,7 +4,7 @@ Similar to ssve005, except that we are now using argparse and saving into a user
 See the "output template" section of the youtube-dl documentation:
 http://rg3.github.io/youtube-dl/documentation.html#d7
 
-eg: 	./007-output.py http://www.youtube.com/watch?v=18-xvIjH8T4 \
+eg: 	./007-output.py --dest videos http://www.youtube.com/watch?v=18-xvIjH8T4 \
 	http://www.youtube.com/watch?v=2Syd_BUbl5A \
 	http://www.youtube.com/watch?v=cU8HrO7XuiE
 """

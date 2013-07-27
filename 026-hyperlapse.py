@@ -84,7 +84,6 @@ def main():
 			n += 1
 
 
-
 	cmd += "color:black out=50 -mix 50 -mixer luma "
 	cmd += "-consumer avformat:{0} vcodec=libxvid vb=5000k r=30 s=320x240".format(args.output)
 	subprocess.call(cmd, shell=True)

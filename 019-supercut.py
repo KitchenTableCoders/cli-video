@@ -2,11 +2,12 @@
 """
 Introduces melt
 
-eg: ./019-supercut.py --output "supercut.mp4" data/giant.mp4 data/cows-big.flv data/puppets.mp4 data/nintendo-big.mp4
+eg: ./019-supercut.py data/giant.mp4 data/cows-big.flv data/puppets.mp4 data/nintendo-big.mp4
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess
 import re
+import os
 
 def get_frames( video ):
 	""" Basically parses the output of ffprobe"""
@@ -34,7 +35,7 @@ def main():
 
 	parser = argparse.ArgumentParser(description='Mush together some videos')
 	parser.add_argument('--frames', type=int, help='number of frames in video', default=5000)
-	parser.add_argument('--output', type=str, help='output name', default="out.mp4")
+	parser.add_argument('--output', type=str, help='output name')
 	parser.add_argument('videos', type=str, nargs='+', help='some videos')	# nargs='+' means "at least one"
 	args = parser.parse_args()
 
@@ -56,7 +57,8 @@ def main():
 		v = (v+1) % len(videos)
 
 	cmd += "color:black out=100 -mix 50 -mixer luma "
-	cmd += "-consumer avformat:{0} vcodec=libxvid acodec=aac ab=448000 vb=5000k r=30 s=640x480".format(args.output)
+	if args.output != None:
+		cmd += "-consumer avformat:{0} vcodec=libxvid acodec=aac ab=448000 vb=5000k r=30 s=640x480".format(args.output)
 	
 	# Check the command length on the host OS
 	if len(cmd) > os.sysconf(os.sysconf_names['SC_ARG_MAX']):

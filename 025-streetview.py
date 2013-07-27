@@ -4,7 +4,7 @@ Creates a video from a series of Google Street View API images
 
 https://developers.google.com/maps/documentation/streetview
 
-eg: ./025-streetview.py --location "Fargo" --output "fargo.avi"
+eg: ./025-streetview.py --location "Offenbacher Landstrasse 473, Frankfurt, Germany" --output "Offenbacher.avi"
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess

@@ -20,7 +20,7 @@ def main():
 
 	parser = argparse.ArgumentParser(description='Say a sentence')
 	parser.add_argument('--name', type=str, help='a name')
-	parser.add_argument('--output', type=str, help='title.avi')
+	parser.add_argument('--output', type=str, default='title.avi')
 	args = parser.parse_args()
 
 	width = 640
@@ -53,17 +53,13 @@ def main():
 		y += h * padding
 	image.save(temp_path)
 
-
-	# 	-y "yes" overwrite
-	#	-loop 1 	The -loop input option (exactly as -loop_input) only works for input of format -f image2.
-	#	-qscale 1 	The avail­able qscale val­ues range from 1 (high­est qual­ity) to 31 (low­est qual­ity).
-	#	-f image2 	(note that it comes before "-i") also (try ffmpeg -formats)
-	#	-t 10 		duration of output
-	#	-an 		no audio
-	cmd = u'ffmpeg -y -loglevel quiet -loop 1 -qscale 1 -f image2 -i %s -r 30 -t 10 -an %s' % (temp_path, args.output)
+	cmd = 'ffmpeg -y -loglevel quiet -loop 1 -qscale 1 -f image2 -i %s -r 30 -t 10 -an %s' % (temp_path, args.output)
+	print cmd
 	subprocess.call(cmd, shell=True)
 	os.remove( temp_path )
 
 
 if __name__ == '__main__':
 	main()
+
+

@@ -4,11 +4,12 @@ Demonstrates
 
 Try these commands first:
 
+ffmpeg -filter_complex "color=duration=5:color=0xFF0000" red.avi
 ffmpeg -filter_complex "color=duration=233.0:size=960x240:rate=30" out.avi
 ffmpeg -i small.mp4 -filter_complex "color=duration=233.0:size=960x240:rate=30[canvas];[canvas][0:v]overlay=20:20" out.avi
 
 
-eg: ./014-triptych.py --output triptych.avi "skateboarding dog"
+eg: ./014-triptych.py --output triptych.avi "brooklyn, NY"
 """
 import argparse
 from subprocess import call, STDOUT, check_output
@@ -35,7 +36,7 @@ def main():
 	width = 320
 	height = 240
 
-	feed_url = "http://gdata.youtube.com/feeds/api/videos?q={0}&max-results=3&v=2&alt=json".format(args.keyword[0])
+	feed_url = "http://gdata.youtube.com/feeds/api/videos?q={0}&max-results=5&v=2&alt=json".format(args.keyword[0])
 	r = requests.get(feed_url)
 	feed = json.loads( r.text )
 	videos = []
@@ -67,14 +68,14 @@ def main():
 	longest = max(durations)
 
 	inputs = ""
-	filter_complex ='color=duration={0}:size={1}x{2}:rate=30[canvas];'.format( math.ceil(longest), width*3, height )
+	filter_complex ='color=duration={0}:size={1}x{2}:rate=30[canvas];'.format( math.ceil(longest), width*len(videos), height )
 
 	x = 0
 	for i, video in enumerate(videos):
 		inputs += "-i {0} ".format(video)
 
 		if i==0: # Add the first video to the canvas generated in the first filter
-			filter_complex += '[canvas][{0}:v]overlay=0:0[vid{1}];'.format(i, i)
+			filter_complex += '[canvas][0:v]overlay=0:0[vid0];'
 
 		elif i==len(videos)-1: # Overlay this scaled video on top of the last output
 			filter_complex += "[vid{0}][{1}:v]overlay={2}:0;".format( str(i-1), i, x )
