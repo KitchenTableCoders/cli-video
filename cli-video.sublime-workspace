@@ -95,13 +95,6 @@
 	},
 	"buffers":
 	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -135,6 +128,32 @@
 	},
 	"file_history":
 	[
+		"/Users/jeff/Documents/cli-video/015-archive.py",
+		"/Users/jeff/Documents/cli-video/026-hyperlapse.py",
+		"/Users/jeff/Documents/cli-video/025-streetview.py",
+		"/Users/jeff/Documents/cli-video/.gitignore",
+		"/Users/jeff/Documents/cli-video/012-watermark.py",
+		"/Users/jeff/Documents/cli-video/013-layered.py",
+		"/Users/jeff/Documents/cli-video/014-triptych.py",
+		"/Users/jeff/Documents/cli-video/001-cli-args.py",
+		"/Users/jeff/Documents/cli-video/002-hashbang.py",
+		"/Users/jeff/Documents/cli-video/003-main-sentinel.py",
+		"/Users/jeff/Documents/cli-video/004-subprocess.py",
+		"/Users/jeff/Documents/cli-video/005-youtube-dl.py",
+		"/Users/jeff/Documents/cli-video/006-argparse.py",
+		"/Users/jeff/Documents/cli-video/007-output.py",
+		"/Users/jeff/Documents/cli-video/008-yt-feed.py",
+		"/Users/jeff/Documents/cli-video/009-destination.py",
+		"/Users/jeff/Documents/cli-video/010-ffmpeg.py",
+		"/Users/jeff/Documents/cli-video/011-duration.py",
+		"/Users/jeff/Documents/cli-video/gitignore",
+		"/Users/jeff/Documents/cli-video/021-echonest.py",
+		"/Users/jeff/Documents/cli-video/020-id3.py",
+		"/Users/jeff/Documents/cli-video/019-supercut.py",
+		"/Users/jeff/Documents/cli-video/016-melt.py",
+		"/Users/jeff/Documents/cli-video/015-frames.py",
+		"/Users/jeff/Documents/cli-video/0110-duration.py",
+		"/Users/jeff/Documents/cli-video/ssve011.py",
 		"/Users/jeff/Sites/explosion/scripts/vidtools.py",
 		"/Users/jeff/Documents/video_grid/make_grid.py",
 		"/Users/jeff/Sites/laborers-of-love/bin/mix.py",
@@ -236,33 +255,7 @@
 		"/Users/jeff/Sites/laborers-of-love/public/css/style.css",
 		"/Users/jeff/Desktop/initializr/index.html",
 		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/VertTriList.cs",
-		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/NearestPointTest.cs",
-		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/KDTree.cs",
-		"/Users/jeff/Sites/laborers-of-love/bin/crossfade.py",
-		"/usr/local/share/echo-nest-remix-examples/summary/summary.py",
-		"/Users/jeff/Desktop/pango.txt",
-		"/Users/jeff/Sites/laborers-of-love/bin/testvid.py",
-		"/Users/jeff/Sites/laborers-of-love/bin/file.melt",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/activity.conf",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/WallController.py",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/manager.py",
-		"/Users/jeff/Documents/of_0071_iOS_release/apps/iPadCasualEncountersGame/.gitignore",
-		"/Users/jeff/Documents/of_0071_iOS_release/apps/iPadCasualEncountersGame/README.md",
-		"/Users/jeff/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/jeff/Library/Application Support/Sublime Text 2/Packages/User/InteractiveSpaces.sublime-build",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.api/src/main/java/com/rockwell/ci/api/CIAPIService.java",
-		"/Users/jeff/Desktop/CityScapeController/src/testApp.h",
-		"/Users/jeff/Desktop/CityScapeController/src/testApp.mm",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/activity.xml",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/webapp/cgi-bin/hello.py",
-		"/Users/jeff/Documents/Google-MtV/com.rockwell.androidforwarder/src/main/resources/activity/AndroidForwarder.py",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.manager/src/main/resources/activity/webapp.py",
-		"/Users/jeff/Documents/Google-Paris/utils/site/rockwell/lab/presets/BaseAdminServerActivity.py",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.exhibit/com.rockwell.ci.exhibit.display/src/main/resources/activity/activity.conf",
-		"/Users/jeff/Documents/Google-Paris/utils/site/rockwell/lab/presets/BaseDisplayActivity.py",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/webapp.py",
-		"/Users/jeff/Documents/Google-Paris/com.rockwell.ci.archive/com.rockwell.ci.archive.display/src/main/resources/activity/activity.conf",
-		"/Users/jeff/Desktop/webapp.py"
+		"/Users/jeff/Desktop/NearestPointOnMesh/Assets/NearestPointTest.cs"
 	],
 	"find":
 	{
@@ -394,34 +387,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
