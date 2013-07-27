@@ -7,7 +7,6 @@ eg: ./016-melt.py --output crossfade.mp4 data/giant.mp4 data/cows-big.flv
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess
-import re
 
 def main():
 

@@ -37,3 +37,4 @@ nosetests.xml
 .DS_Store
 /hyperlapse_tmp/
 /intro.avi
+/filters.mp4

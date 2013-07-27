@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
-Titles!
+Demonstrates using PIL to create a single image, which is then turned into a video
+http://www.pythonware.com/products/pil/
 
 eg: ./030-titles.py --name Jeff 
 """
@@ -13,13 +14,31 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 
-def makeTextVideo( path, lines, y_start, width=640, height=480 ):
-	global fontDir
+
+
+def main():
+
+	parser = argparse.ArgumentParser(description='Say a sentence')
+	parser.add_argument('--name', type=str, help='a name')
+	parser.add_argument('--output', type=str, help='title.avi')
+	args = parser.parse_args()
+
+	width = 640
+	height = 480
+
+	# Create a list of dictionaries.  Each dict contains "text" and "size"
+	lines = [
+			{"text": args.name, "size": 48, "font": "data/Railway.TTF"},
+			{"text": "Description", "size": 24, "font": "data/Railway.ttf"},
+			{"text": "  ", "size": 24, "font": "data/Railway.ttf"},
+			{"text": "music:", "size": 24, "font": "data/Railway.ttf"},
+			{"text": "song_text", "size": 18, "font": "data/Railway.ttf"} ]
+
 	_, temp_path = mkstemp(suffix = '.png')
 	image = Image.new("RGB", (width, height), (0, 0, 0))
 	draw = ImageDraw.Draw(image)
 	padding = 1.2
-	y = y_start
+	y = 120
 	for line in lines:
 		w = width+1
 		h = 0
@@ -33,26 +52,18 @@ def makeTextVideo( path, lines, y_start, width=640, height=480 ):
 		draw.text((x, y), line["text"], (255, 0, 255), font=font)
 		y += h * padding
 	image.save(temp_path)
-	cmd = u'ffmpeg -y -loglevel quiet -loop 1 -qscale 1 -f image2 -i %s -r 30 -t 10 -an %s' % (temp_path, path)
+
+
+	# 	-y "yes" overwrite
+	#	-loop 1 	The -loop input option (exactly as -loop_input) only works for input of format -f image2.
+	#	-qscale 1 	The avail­able qscale val­ues range from 1 (high­est qual­ity) to 31 (low­est qual­ity).
+	#	-f image2 	(note that it comes before "-i") also (try ffmpeg -formats)
+	#	-t 10 		duration of output
+	#	-an 		no audio
+	cmd = u'ffmpeg -y -loglevel quiet -loop 1 -qscale 1 -f image2 -i %s -r 30 -t 10 -an %s' % (temp_path, args.output)
 	subprocess.call(cmd, shell=True)
 	os.remove( temp_path )
-	return path
 
-
-def main():
-
-	parser = argparse.ArgumentParser(description='Say a sentence')
-	parser.add_argument('--name', type=str, help='a name')
-	args = parser.parse_args()
-
-	introClip = "intro.avi"
-	intro = [
-			{"text": args.name, "size": 48, "font": "data/Railway.TTF"},
-			{"text": "Description", "size": 24, "font": "data/Railway.ttf"},
-			{"text": "  ", "size": 24, "font": "data/Railway.ttf"},
-			{"text": "music:", "size": 24, "font": "data/Railway.ttf"},
-			{"text": "song_text", "size": 18, "font": "data/Railway.ttf"} ]
-	makeTextVideo( introClip, intro, 120 )
 
 if __name__ == '__main__':
 	main()

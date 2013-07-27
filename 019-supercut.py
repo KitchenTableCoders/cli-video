@@ -57,6 +57,11 @@ def main():
 
 	cmd += "color:black out=100 -mix 50 -mixer luma "
 	cmd += "-consumer avformat:{0} vcodec=libxvid acodec=aac ab=448000 vb=5000k r=30 s=640x480".format(args.output)
+	
+	# Check the command length on the host OS
+	if len(cmd) > os.sysconf(os.sysconf_names['SC_ARG_MAX']):
+		raise EnvironmentError("command is too long!")
+
 	subprocess.call(cmd, shell=True)
 
 
