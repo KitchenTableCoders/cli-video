@@ -3,7 +3,7 @@
 Introduces crossfade via melt
 http://www.mltframework.org/bin/view/MLT/MltMelt
 
-eg: ./016-melt.py --output crossfade.mp4 data/giant.mp4 data/cows-big.flv 
+eg: ./017-melt.py --output crossfade.mp4 data/giant.mp4 data/cows-big.flv 
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess

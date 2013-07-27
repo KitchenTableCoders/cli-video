@@ -5,7 +5,7 @@ Demonstrate how to get frame information from a video
 Try this command first: 
 ffprobe -loglevel quiet -show_frames data/giant.mp4
 
-eg: ./015-frames.py data/giant.mp4
+eg: ./016-frames.py data/giant.mp4
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess

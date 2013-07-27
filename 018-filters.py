@@ -28,7 +28,7 @@ Filters:
    silently ignore properties that do not apply.
 
 
-eg: ./017-filters.py --output filters.mp4 data/giant.mp4 data/cows-big.flv 
+eg: ./018-filters.py --output filters.mp4 data/giant.mp4 data/cows-big.flv 
 """
 import argparse 	# http://docs.python.org/2/library/argparse.html#module-argparse
 import subprocess
