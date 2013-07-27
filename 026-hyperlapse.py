@@ -18,20 +18,20 @@ import math
 api_key = "AIzaSyBAtUbXjwQbKXulkh2HQWc5W2QOe5PIE40"
 
 
-def bearing(a, b):
-	lat1 = math.radians(a["lat"])
-	lon1 = math.radians(a["lng"])
-	lat2 = math.radians(b["lat"])
-	lon2 = math.radians(b["lng"])
-	dLat = lat2-lat1
-	dLon = lon2-lon1
+def bearing(lat1, lon1, lat2, lon2):
+	lat1 = math.radians(lat1)
+	lon1 = math.radians(lon1)
+	lat2 = math.radians(lat2)
+	lon2 = math.radians(lon2)
+	dLat = lat2 - lat1
+	dLon = lon2 - lon1
 	y = math.sin(dLon) * math.cos(lat2);
 	x = math.cos(lat1) * math.sin(lat2) - math.sin(lat1)* math.cos(lat2)*math.cos(dLon);
 	brng = math.atan2(y, x)
 	return math.degrees( brng )
 
-def main():
 
+def main():
 	parser = argparse.ArgumentParser(description='Create a video using Google Streetview')
 	parser.add_argument('--origin', type=str, help='a location', default="Times Square, NYC")	
 	parser.add_argument('--destination', type=str, help='a location', default="Times Square, NYC")
@@ -59,14 +59,21 @@ def main():
 		delta_lat = end_lat - start_lat
 		delta_lng = end_lng - start_lng
 		distance = step["distance"]["value"]
-		heading = bearing(step["start_location"], step["end_location"])
+		
 		substeps =  int(math.ceil(distance/12))
 		print "Plotting {5} points, distance of {4}, from {0},{1} to {2},{3}".format(start_lat, start_lng, end_lat, end_lng, distance, substeps)
 
+		lat = start_lat
+		lng = start_lng
+		
 		for substep in range(0, substeps):
-			pct = float(substep)/float(substeps)
-			lat = start_lat + (delta_lat * pct)
-			lng = start_lng + (delta_lng * pct)
+			pct = float(substep) / float(substeps)
+			new_lat = start_lat + (delta_lat * pct)
+			new_lng = start_lng + (delta_lng * pct)
+			heading = bearing(lat, lng, new_lat, new_lng)
+
+			lat = new_lat
+			lng = new_lng
 			location = "{0},{1}".format(lat,lng)
 			query = urllib.urlencode({"size": "320x240", "location": location, "heading": heading, "sensor": "false", "key": api_key})
 			remote = 'http://maps.googleapis.com/maps/api/streetview?{0}'.format(query)
@@ -75,6 +82,8 @@ def main():
 				urllib.urlretrieve(remote, local)
 			cmd += "{0} out=5 -mix 4 -mixer luma ".format(local)
 			n += 1
+
+
 
 	cmd += "color:black out=50 -mix 50 -mixer luma "
 	cmd += "-consumer avformat:{0} vcodec=libxvid vb=5000k r=30 s=320x240".format(args.output)
